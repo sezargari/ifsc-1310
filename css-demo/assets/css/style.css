@@ -18,6 +18,27 @@ html {
   max-width:900px;
 }
 
+.img-right{
+  float:right;
+  padding:5px;
+  border:1px solid #c0c0c0;
+  margin: 10px 0 10px 20px;
+}
+
+.img-left{
+  float:left;
+  padding:5px;
+  border:1px solid #c0c0c0;
+  margin: 10px 20px 10px 0;
+}
+
+.img-center{
+  display:block;
+  padding:5px;
+  border:1px solid #c0c0c0;
+  margin: 20px auto;
+}
+
 /* ---------------Responsive Images----------------- */
 img{
   max-width:100%;
@@ -27,14 +48,15 @@ img{
 
 /* ---------------Global Styles----------------- */
 body{
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Comic Sans Ms', sans-serif;
   margin:0;
+  line-height:1.5
 }
 
 header.primary{
-  background-color:#3b638b;
+  background-color:#000000;
   text-align:center;
-  color:#ffffff;
+  color:#00bbbb;
   text-shadow: 2px 2px #000;
   /* Longform */
   padding-top:40px;
@@ -47,6 +69,8 @@ header.primary{
   
   /* Shorthand  T,R,B,L */
   padding: 40px 40px 20px 40px;
+  
+background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%239C92AC' fill-opacity='0.25'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 
 }
 
@@ -57,7 +81,7 @@ header.primary h1{
 
 header.primary h1 a{
   text-decoration:none;
-  color:#ffffff;
+  color:#00bbbb;
 }
 
 header.primary h2{
@@ -85,9 +109,9 @@ header.primary nav ul li{
 }
 
 header.primary nav ul li a:link, header.primary nav ul li a:visited{
-  color:#ffffff;
+  color:#00bbbb;
   text-decoration:none;
-  background-color:#000000;
+  background-color:#ffffff;
   background-color:rgba(0,0,0,.4);
   padding: 8px 16px;
   border-radius:20px;
@@ -109,13 +133,15 @@ header.primary nav ul li a:hover, header.primary nav ul li a:active{
 }
 
 #intro h2{
-  color:#3b638b;
+  color:#00bbbb;
 }
 
 #content{
 display:flex;
 flex-direction:row;
 justify-content:space-between;
+border-bottom:1px solid #c0c0c0;
+padding-bottom:2.6rem;
 }
 
 #content article.post{
@@ -148,7 +174,147 @@ justify-content:space-between;
 .post a:link,.post a:visited{
   color:#3b638b;
 }
+/* Attribute Selector */
+aside[role="complementary"]{
+  background-color:#172635;
+  color:#ffffff;
+  padding:2.5rem;
+}
+aside .container{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
 
+aside article.widget{
+  width: 40%;
+}
+
+aside a:link, aside a:visited{
+  color:#fff;
+  display:block;
+  margin-top: 20px;
+  letter-spacing: 1.5px;
+}
+
+aside a:hover, aside a:active{
+  text-decoration:none;
+}
+
+aside article footer{
+  display:none;
+}
+
+
+footer#colophon{
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%239C92AC' fill-opacity='0.25'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+#colophon h6{
+  padding:20px;
+  margin:0;
+  color:#00ffff;
+  text-align:center;
+  font-size:.8rem;
+  text-transform:uppercase;
+}
+
+#additional-elements h2{
+color:#000000;
+border-bottom: 3px double #c0c0c0;
+}
+
+#additional-elements a:link, #additional-elements a:visited{
+  color:#000000;
+}
+
+#additional-elements a:visited, #additional-elements a:active{
+  text-decoration:none;
+}
+
+#additional-elements h3{
+  border-left: 5px solid #000000;
+  padding: 10px 10px;
+}
+
+table{
+  width:100%;
+  border:1px solid #c0c0c0;
+  border-collapse:collapse;
+}
+
+table caption{
+  color:#000000;
+  padding:10px;
+  font-weight:bold;
+  font-size:1.4rem;
+}
+
+table tr:nth-child(even){
+  background: rgba(0,0,0,.10)
+}
+
+table tr:hover{
+  background: rgba(0,0,0,.20)
+}
+
+table th{
+  background-color:#172635;
+  color:#ffffff;
+  width:33%;
+  padding:10px;
+}
+
+table td {
+  border:1px solid #c0c0c0;
+  padding:5px;
+}
+
+#additional-elements ol{
+  list-style-type:upper-roman;
+}
+
+#additional-elements li{
+
+}
+
+#additional-elements ul ul{
+  list-style-type:square;
+}
+
+#additional-elements dl{
+  line-height:1.5
+}
+
+#additional-elements dt{
+  font-weight:bold;
+  font-size:1.2rem;
+}
+
+#additional-elements dd{
+  margin:0;
+}
+
+dd + dt{
+  margin-top:1.4rem;
+}
+
+#additional-elements blockquote{
+  background:rgba(0,0,0,.15);
+  padding: 40px 60px;
+  border:5px double grey;
+  border-radius:16px;
+  font-size:1.2em;
+}
+
+#additional-elements cite{
+  display:block;
+  font-size:.6em;
+  text-align:right;
+  margin-top:1.5rem;
+  font-weight:bold;
+}
 
 @media screen and (max-width:690px){
   
@@ -165,3 +331,14 @@ justify-content:space-between;
   
   
 }
+
+
+
+
+
+
+
+
+
+
+

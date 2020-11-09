@@ -176,7 +176,7 @@ padding-bottom:2.6rem;
 }
 /* Attribute Selector */
 aside[role="complementary"]{
-  background-color:#172635;
+  background-color:#00bbbb;
   color:#ffffff;
   padding:2.5rem;
 }
@@ -186,8 +186,10 @@ aside .container{
   justify-content:space-between;
 }
 
-aside article.widget{
-  width: 40%;
+aside .widget{
+  width: 45%;
+  color:#ffffff;
+  
 }
 
 aside a:link, aside a:visited{
@@ -331,6 +333,7 @@ dd + dt{
   
   
 }
+
 
 
 

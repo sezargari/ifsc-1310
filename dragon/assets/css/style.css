@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 64px;
+}
+
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+
+header.primary {
+  background-color: #181c1f;
+  text-align: left;
+  color: #ffffff;
+  text-shadow: 2px 2px #000000;
+  /* Shorhand T,R,B,L*/
+  padding: 6em 2em;
+  position: relative;
+}
+
+header.primary::before {
+  content: "";
+  background: url("../img/Dragon_2_hover_test.jpg") no-repeat center center;
+ /* background-size: cover;*/
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.4;
+}
+
+header.primary h1 {
+  font-size: 3.2rem;
+  text-align: center;
+  margin: 20px 0;
+  position: relative;
+}
+
+header.primary h1 a {
+  color: #ffffff;
+  background-image: url("https://assets.codepen.io/7248/logo-2.png");
+  display: block;
+  text-align: left;
+  width: 450px;
+  height: 70px;
+  text-indent:100%;
+  white-space:nowrap;
+  overflow:hidden; 
+}
+
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar li {
+  float: left;
+}
+
+#navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+#navbar li a:hover {
+  background-color: #111;
+}
+
+#company  {
+  text-align: center;
+}
+
+
+#overview  {
+  text-align: center;
+  color: #A7A9AC;
+  background-color: #005288;
+}
+
+
+#configs h2 {
+  text-align: center;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.left50 {
+  float: left;
+  width: 50%;
+}
+
+.right50{
+  float: left;
+  width: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+  .left50,
+  .right50 {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+#crewrow {
+  color: #A7A9AC;
+  background-color: #005288;
+}
+
+.container table{
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.qanda {
+  text-align: center;
+}
+
+.blueqa {
+  color: #A7A9AC;
+  background-color: #005288;
+  padding: 64px;
+}
+
+.whiteqa {
+  padding: 64px;
+}
+
+#colophon{
+  color: #A7A9AC;
+  background-color: #005288;
+}
+
+#colophon h6{
+  padding:20px;
+  margin:0;
+  text-align:center;
+  font-size:.8rem;
+  text-transform:uppercase;
+}
+
+#colophon h6 a:link,
+#colophon h6 a:visited {
+  color: #99A;          /* Color conversion from A7A9AC */
+}
